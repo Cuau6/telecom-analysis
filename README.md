@@ -2,7 +2,7 @@
 Este proyecto analiza el comportamiento de los clientes de ConnectaTel para identificar segmentos y oportunidades de mejora en los planes.
 
 
-🎯 Objetivos de aprendizaje del proyecto
+Objetivos de aprendizaje del proyecto
 Integrar y limpiar bases de datos provenientes de tres fuentes distintas.
 Aplicar técnicas de validación, estandarización de tipos de datos y detección de valores inconsistentes.
 Construir un perfil estadístico del uso (llamadas y mensajes) por cliente y por segmentos demográficos.
@@ -28,8 +28,61 @@ Paso	Acción	Resultado para el negocio
 8. Publicación	Subir tu notebook + README a GitHub.	Entrega reproducible para revisión y ejecución por stakeholder
 
 
-Cómo ejecutar el notebook 
+Cómo ejecutar el notebook
 
+### Opción 1: Google Colab
+
+1. Descarga o clona este repositorio.
+2. Abre el archivo `.ipynb`.
+3. Ingresa a [Google Colab](https://colab.research.google.com/).
+4. Selecciona **Archivo → Subir notebook**.
+5. Carga el archivo `.ipynb`.
+6. Verifica que los archivos de datos utilizados por el notebook estén disponibles.
+7. Ejecuta las celdas en orden utilizando **Entorno de ejecución → Ejecutar todas**.
+
+### Opción 2: Jupyter Notebook
+Si tienes Python instalado localmente, instala las principales dependencias:
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+```
+Después, ejecuta:
+```bash
+jupyter notebook
+```
+Abre el archivo `.ipynb` desde Jupyter Notebook y ejecuta las celdas en orden.
+
+## Guía de reproducción
+
+Para reproducir el análisis:
+
+1. Descargar o clonar el repositorio.
+2. Colocar los archivos de datos en la ubicación indicada dentro del notebook.
+3. Abrir el notebook en Google Colab o Jupyter Notebook.
+4. Ejecutar las celdas de importación y carga de datos.
+5. Ejecutar el proceso de limpieza y preparación de los DataFrames.
+6. Generar el DataFrame combinado `user_profile`.
+7. Ejecutar el análisis exploratorio de las variables.
+8. Identificar los valores atípicos mediante boxplots y el método IQR.
+9. Crear las variables de segmentación:
+
+   * `grupo_uso`
+   * `grupo_edad`
+10. Generar las visualizaciones correspondientes.
+11. Revisar los insights y conclusiones obtenidos del análisis.
+
+## Tecnologías utilizadas
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
+* Google Colab
+
+## Cuauh Jr DA
+
+Proyecto desarrollado como parte de un ejercicio de análisis de datos y segmentación de clientes.
 
 
 
